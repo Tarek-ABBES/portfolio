@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realization and Controlling Three Tanks Coupled System using Data-Driven Control</title>
+    <!--  انجح برك اطارق اربح برك  -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #555;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .detail {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .project-description h2 {
+            margin-bottom: 10px;
+        }
+
+        .features {
+            margin-top: 10px;
+        }
+
+        .image-scroll {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 15px;
+            background: #fafafa;
+            border-radius: 8px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-scroll img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-scroll img:hover {
+            transform: scale(1.05);
+        }
+
+        .image-scroll::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .image-scroll::-webkit-scrollbar-track {
+            background: #f4f4f4;
+            border-radius: 5px;
+        }
+
+        .image-scroll::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 5px;
+        }
+
+        .image-scroll::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #555;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Realization and Controlling Three Tanks Coupled System using Data-Driven Control</h1>
+    </header>
+
+    <main>
+        <div class="container detail">
+            <div class="project-description">
+                <h2>Project Description</h2>
+                <p>This project focuses on the realization and control of a three-tank coupled system using data-driven control techniques. 
+                    The goal is to design and implement a system that can regulate the water levels in the tanks by processing real-time 
+                    data and applying appropriate control strategies.
+                </p>
+
+                <h3>Tools:</h3>
+                <div class="features">
+                    <div>MIMO System Modeling</div>
+                    <div>Data-Driven Controller</div>
+                    <div>LQR</div>
+                    <div>PI Controller</div>
+                    <div>LabVIEW</div>
+                    <div>NI myRIO 1900</div>
+                    <div>MATLAB Simulink</div>
+                </div>
+
+                <h2>Project Results:</h2>
+
+                <h2>LabVIEW:</h2>
+                <div class="image-scroll">
+                    <img src="img/Lqr_sr.png" alt="Image 1">
+                    <img src="img/LQR_S_R.png" alt="Image 2">
+                </div>
+
+                <h2>Data-Driven LQR:</h2>
+                <div class="image-scroll">
+                    <img src="img/lqr_data_driven.jpg" alt="Image 1">
+                    <img src="img/lqr_data_driven_perturbation.jpg" alt="Image 1">
+                </div>
+
+                <h2>Data-Driven LMI:</h2>
+                <div class="image-scroll">
+                    <img src="img/lmi_data_driven.jpg" alt="Image 1">
+                    <img src="img/lmi_perturbation.jpg" alt="Image 2">
+                </div>
+
+                <h2>LQR:</h2>
+                <div class="image-scroll">
+                    <img src="img/lqr_normal_K_belarbi.jpg" alt="Image 1">
+                    <img src="img/lqr_normal_K_belarbi_perturbation.jpg" alt="Image 2">
+                </div>
+
+                <h2>LQR with Integrator:</h2>
+                <div class="image-scroll">
+                    <img src="img/lqr_integrator.jpg" alt="Image 1">
+                    <img src="img/lqr_I_perturbation.jpg" alt="Image 2">
+                </div>
+
+                <h2>PI:</h2>
+                <div class="image-scroll">
+                    <img src="img/pi_pert.jpg" alt="Image 1">
+                    <img src="img/pi_pert.jpg" alt="Image 2">
+                </div>
+
+                <h3>Watch the Demo:</h3>
+                <iframe 
+                    width="100%" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/A0usz6a-6rI" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Tarek ABBES</p>
+    </footer>
+</body>
+</html>
